@@ -1,0 +1,209 @@
+@font-face {
+    font-family: FreakShow;
+    src: url(Fontes/Carnevalee-Freakshow.ttf);
+}
+
+@font-face {
+    font-family: Bronco;
+    src: url(Fontes/Bronco.ttf);
+}
+
+:root {
+    --cor-texto-destaque: #EFAC44;
+    --cor-titulo: #EFBF94;
+    --cor-texto-padrao: #FFFFFF;
+    --cor-subtitulos: #5D3813;
+    --cor-autor: #B7B9C3;
+    overflow-x: hidden;
+
+
+    --tamanho-titulo-cidade: 7.5vw;
+    --tamanho-nome-musica: 2.5rem;
+    --tamanho-nome-autor: 1.5rem;
+}
+
+body {
+    margin: 0 5.7vw;
+    background-color: #0D0601;
+}
+
+circle, header svg{
+    position: absolute;
+    left: 0%;
+    
+}
+
+circle {
+    background: radial-gradient(#e66465, #9198e5);
+    transform: translate(-10%, -12%);
+    stroke-width: 3%;
+    stroke-opacity: 15%;
+    stroke: #0D0601;
+}
+
+svg text {
+    font-family: FreakShow, Arial, Helvetica, sans-serif;
+    fill: white;
+    font-size: 0.5rem;
+}
+
+header {
+    transform: translateY(4rem);
+    height: 40vw;
+    background-image: url("../Imagens/Cranyon.jpg");
+    background-repeat: no-repeat;
+    background-clip: border-box;
+    background-origin: content-box;
+}
+
+.ignore-margin {
+    width: 100vw;
+    transform: translateX(-5.7vw);
+}
+
+nav {
+    padding-left:20vw;
+    background-color:rgba(13, 6, 1, 0.15);
+    scroll-behavior: auto;
+    position: sticky;
+    top: 0;
+    z-index: 1030;
+}
+
+nav #pseudonav{
+    
+    display:grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr;
+    text-align: right;
+    align-items: center;
+    position: sticky;
+    padding: 1rem;
+    
+    
+    justify-content: space-evenly;
+}
+
+nav div p {
+    font-family:'Courier New', Courier, monospace;
+    font-weight: 600;
+    color: var(--cor-texto-destaque);
+    cursor: pointer;
+    z-index: 99999;
+}
+
+#shotgun-tupaciguara {
+    display:flex;
+    position: relative;
+    z-index: 2;
+    bottom: -37vw;
+    left:4vw;
+    width: 26vw;
+    height: auto;
+    transform: rotateZ(6deg);
+    transition: 0.6s;
+}
+
+#shotgun-tupaciguara:hover {
+    transform: rotateZ(0deg)
+}
+
+#tupaciguara-titulo-pai {
+    display:flex;
+    position: relative;
+
+    bottom: -27.8vw;
+    transform:translateX(10vw);
+    justify-content: center;
+    font-size:var(--tamanho-titulo-cidade);
+    
+}
+
+#tupaciguara-titulo-pai img {
+    width: calc(var(--tamanho-titulo-cidade) - 4vw);
+    height: fit-content;
+    transform: translateY(1.3vw);
+    box-shadow: 2px 4px 4px black;
+}
+
+.tupaciguara-titulo {
+    font-size: inherit;
+    font-family: FreakShow;
+    font-weight: 50;
+    color:var(--cor-texto-padrao);
+    margin: 0;
+    text-shadow: 2px 4px 4px black;
+}
+
+.poster {
+    width: fit-content;
+    display:flex;
+}
+.poster img{
+    width: 22vw;
+    height: auto;
+}
+
+#tupaciguara {
+    display:flex;
+    z-index: 1;
+}
+
+#tupaciguara h2 {
+    font-size: 5vw;
+    color: var(--cor-texto-padrao);
+    
+}
+
+.musicas {
+    margin-left: 7vw;
+    display:grid;
+    z-index: 1;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    column-gap: 6vw;
+}
+
+.musica {
+    width: 25vw;
+    height: fit-content;
+    display:grid;
+    grid-template-columns: 3vw 3vw 3fr;
+    grid-template-rows: 3vw 3vw;
+}
+
+.imagem-musica {
+    height: 6vw;
+    width: 6vw;
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.musica:hover .imagem-musica {
+    opacity: 0.5;
+}
+
+.nome-musica {
+    color: var(--cor-texto-padrao);
+    font-family: Bronco;
+    font-weight: 50;
+    grid-row: 1;
+    grid-column: 3;
+    margin: 0;
+    margin-top: auto;
+    font-size: var(--tamanho-nome-musica);
+    cursor: default;
+}
+
+.musica:hover .nome-musica {
+    color: var(--cor-texto-destaque);
+}
+
+.autor-musica{
+    color:var(--cor-autor);
+    font-family: Bronco;
+    grid-row: 2;
+    grid-column: 3;
+    margin: 0;
+    font-size: var(--tamanho-nome-autor);
+    cursor: default;
+}
