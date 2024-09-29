@@ -1,11 +1,13 @@
 @font-face {
     font-family: FreakShow;
     src: url(Fontes/Carnevalee-Freakshow.ttf);
+    font-weight: 50;
 }
 
 @font-face {
     font-family: Bronco;
     src: url(Fontes/Bronco.ttf);
+    font-weight: 50;
 }
 
 :root {
@@ -18,8 +20,8 @@
 
 
     --tamanho-titulo-cidade: 7.5vw;
-    --tamanho-nome-musica: 2.5rem;
-    --tamanho-nome-autor: 1.5rem;
+    --tamanho-nome-musica: 2.083vw;
+    --tamanho-nome-autor: 1.25vw;
 }
 
 body {
@@ -30,7 +32,6 @@ body {
 circle, header svg{
     position: absolute;
     left: 0%;
-    
 }
 
 circle {
@@ -39,6 +40,7 @@ circle {
     stroke-width: 3%;
     stroke-opacity: 15%;
     stroke: #0D0601;
+    z-index: 12;
 }
 
 svg text {
@@ -67,11 +69,10 @@ nav {
     scroll-behavior: auto;
     position: sticky;
     top: 0;
-    z-index: 1030;
+    z-index: 10;
 }
 
 nav #pseudonav{
-    
     display:grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: 1fr;
@@ -116,6 +117,14 @@ nav div p {
     transform:translateX(10vw);
     justify-content: center;
     font-size:var(--tamanho-titulo-cidade);
+}
+
+#tupaciguara-titulo-pai h2 {
+    color: var(--cor-subtitulos);
+    font-size: calc(var(--tamanho-titulo-cidade) - var(--tamanho-nome-musica) - 1.2vw);
+    transform:translate(-19vw, 3vw);
+    font-family: Bronco;
+    font-weight: 50;
     
 }
 
@@ -155,8 +164,12 @@ nav div p {
     
 }
 
+#tupaciguara .musicas {
+    margin-top: 5vw;
+}
+
 .musicas {
-    margin-left: 7vw;
+    margin-left: 4vw;
     display:grid;
     z-index: 1;
     grid-template-columns: 1fr 1fr;
@@ -206,4 +219,46 @@ nav div p {
     margin: 0;
     font-size: var(--tamanho-nome-autor);
     cursor: default;
+}
+
+
+
+
+
+#sacramento {
+    margin-top: 10vw;
+}
+
+.sacramento-header {
+    height: 15vw;
+    width: 100%;
+    background-image: url(../Imagens/Sacramento/sacramento-bg.jpg);
+    background-size: cover;
+    background-position-y: 86%;
+    background-position-x: center;
+    filter: grayscale();
+}
+
+.sacramento-header-titulo {
+    display:flex;
+    /* position: relative; */
+    justify-content: center;
+    align-items: center;
+    font-size:var(--tamanho-titulo-cidade);
+    transform: translate(5vw, 2.8vw);
+}
+
+.sacramento-header-titulo img {
+    position: absolute;
+    width: 20vw;
+    height: fit-content;
+    transform: translate(3vw, -1vw);
+}
+
+.sacramento-header-titulo .tupaciguara-titulo {
+    transform: translateX(-40%);
+}
+
+.sacramento-header-titulo img + .tupaciguara-titulo {
+    transform: translateX(-6vw);
 }
