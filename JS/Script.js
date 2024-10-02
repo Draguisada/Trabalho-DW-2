@@ -33,6 +33,9 @@ function goto(elem) {
     if (elem == "tupaciguara") {
         scrollToY = scrollToY - 200;
     }
+    if (elem == "sacramento") {
+        scrollToY = scrollToY - 350;
+    }
 
     scroll({left:0, top:scrollToY, behavior: 'smooth'});
 }
