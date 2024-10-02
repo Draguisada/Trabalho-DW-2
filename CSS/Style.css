@@ -281,3 +281,16 @@ nav div p {
     font-size: calc(var(--tamanho-nome-musica) + 1vw);
     margin: 1% 0;
 }
+
+.musica-sacramento {
+    height: 20vw;
+    width: 20vw;
+}
+
+.mid {
+    justify-self: center;
+}
+
+.right {
+    justify-self: right;
+}
