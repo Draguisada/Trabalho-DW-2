@@ -5,10 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fogo que dança</title>
     <link rel="stylesheet" href="CSS/Style.css">
+    <link rel="icon" href="Imagens/Sacramento/T.webp" type="image/icon type" id="icon">
+    
 </head>
 <body>
 
-
+    <nav>
+        <div id="pseudonav">
+            <p onclick="goto('tupaciguara')">Tupaciguara</p>
+            <p onclick="goto('sacramento')">Sacramento</p>
+            <p onclick="goto('araguari')">Araguari</p>
+            <p onclick="goto('oficina')">Oficina</p>
+            <p onclick="goto('jornal')">Jornal</p>
+        </div>
+    </nav>
     <header class="ignore-margin">
             <svg viewBox="0 0 300 300" style="z-index: -1;">
                 <defs>
@@ -51,6 +61,23 @@
                 <text x="25.2" y="26.5">que </text>
                 <text x="22.2" y="36.5">danca</text>
             </svg>
+    
+    <div class="cidades">
+        <div id="cidade-araguari" onclick="goto('araguari')">
+            <h2>Araguari</h2>
+            <img src="Imagens/Araguari/Indio.png" alt="Araguari">
+        </div>
+        <div id="cidade-sacramento" onclick="goto('sacramento')">
+            <h2>Sacramento</h2>
+            <img src="Imagens/Sacramento/T.webp" alt="Araguari">
+        </div>
+
+        <div id="cidade-tupaciguara" onclick="goto('tupaciguara')">
+            <h2>Tupaciguara</h2>
+            <img src="Imagens/tapuciguara/Ace os Spades.svg" alt="Araguari">
+        </div>
+
+    </div>
 
     <img src="Imagens/tapuciguara/shotgun.png" alt="Shotgun decoração" id="shotgun-tupaciguara">
     <div id="tupaciguara-titulo-pai">
@@ -59,15 +86,7 @@
     </div>
     
     </header>
-    <nav>
-        <div id="pseudonav">
-            <p onclick="goto('tupaciguara')">Tupaciguara</p>
-            <p onclick="goto('sacramento')">Sacramento</p>
-            <p onclick="goto('araguari')">Araguari</p>
-            <p onclick="goto('oficina')">Oficina</p>
-            <p onclick="goto('jornal')">Jornal</p>
-        </div>
-    </nav>
+
 
     <div id="tupaciguara">
         <div class="poster"><img src="Imagens/tapuciguara/Horacio.webp" alt=""></div>
@@ -77,7 +96,7 @@
             <div class="musica">
                 <iframe class="imagem-musica" src="https://www.youtube-nocookie.com/embed/-h2iK_fxiXw?si=qWsQAxgw5aTiYVhL&amp;controls=0" title="YouTube video player" frameborder="0" allow="clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 <h3 class="nome-musica">Musica Perditionem</h3>
-                <a class="autor-musica" href="https://www.youtube.com/channel/UCy5MRrIiK57_bz2wQcvjtLA" target="_blank">Saint Juvi</a>
+                <a class="autor-musica">Saint Juvi</a>
             </div>
             <div class="musica">
                 <iframe class="imagem-musica" width="560" height="315" src="https://www.youtube-nocookie.com/embed/hRMtt8tES-U?si=haACtrDRRP7e-OLX&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -119,7 +138,7 @@
 
         <h2 class="subtitulo-header">Violencia</h2>
 
-        <div id="musicas-sacramento">
+        <div class="musicas">
             <h2 class="subsubtitle">Batalha</h2>
             <h2 class="subsubtitle" style="text-align: center;">Tensao</h2>
             <h2 class="subsubtitle" style="text-align: right;">Duelo</h2>
@@ -156,6 +175,37 @@
         </div>
     </div>
 
+    <div id="araguari">
+            <div class="araguari-header-titulo ignore-margin">
+                <h1 class="tupaciguara-titulo">Araguari</h1>
+                <img src="Imagens/Araguari/Flecha.png" alt="Flecha dentro da palavra Araguari">
+            </div>
+
+        <h2 class="subtitulo-header">Sagrados</h2>
+
+        <div class="body">
+            <img src="Imagens/Araguari/Indios.webp" alt="Uma familia de indios">
+            <div class="musicas">
+                <div class="musica">
+                    <iframe class="imagem-musica" width="560" height="315" src="https://www.youtube-nocookie.com/embed/-45T5kcYIys?si=RrN1YWNK0hn36IwV&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <h3 class="nome-musica">Sister Sarah's Theme</h3>
+                    <a class="autor-musica">Rick Ross, John Legend, Anthony Hamilton, Elayna Boynton</a>
+                </div>
+                <div class="musica">
+                    <iframe class="imagem-musica" width="560" height="315" src="https://www.youtube-nocookie.com/embed/5LZScKjkAy8?si=NdwvJ0rrrYPluWNP&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <h3 class="nome-musica">Estancia</h3>
+                    <a class="autor-musica">Bill Elm, Woody Jackson</a>
+                </div>
+                <div class="musica">
+                    <iframe class="imagem-musica" width="560" height="315" src="https://www.youtube-nocookie.com/embed/UczIkzBgMfY?si=jp8Qh-EB9UannFzN&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <h3 class="nome-musica">Eastward Bound</h3>
+                    <a class="autor-musica">Woody Jackson</a>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
     
 </body>
 <script src="JS/Script.js"></script>
