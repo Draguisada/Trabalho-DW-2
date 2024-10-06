@@ -15,10 +15,12 @@ window.addEventListener("scroll", (event) => {
     scrollIcon = scroll;
     if (scrollIcon < 1500) {
         icone.href='Imagens/tapuciguara/poker-cards.png';
-    } else if (scrollIcon < 2800) {
+    } else if (scrollIcon < 2500) {
         icone.href='Imagens/Sacramento/T.webp';
-    } else if (scrollIcon < 3250) {
+    } else if (scrollIcon < 3500) {
         icone.href='Imagens/Araguari/Indio.png';
+    } else if (scrollIcon < 4300) {
+        icone.href='Imagens/Oficina/Skull.webp';
     }
 
 
@@ -56,6 +58,7 @@ function changeNavOpacity(opacity) {
 
 scroll(-2000, 0)
 
+scroll(-2000, -2000)
 
 function goto(elem) {
     procura = document.getElementById(elem);
@@ -65,6 +68,9 @@ function goto(elem) {
     }
     if (elem == "sacramento") {
         scrollToY = scrollToY - 320;
+    }
+    if (elem == "oficina") {
+        scrollToY = scrollToY - 40;
     }
 
     scrollToY = scrollToY - 30;

@@ -14,6 +14,9 @@
     --cor-texto-padrao: #FFFFFF;
     --cor-subtitulos: #5D3813;
     --cor-autor: #B7B9C3;
+
+    --cinza-oficina: #383838;
+
     overflow-x: hidden;
 
 
@@ -425,4 +428,242 @@ nav div p {
     grid-template-rows: 4vw 4vw;
     column-gap: 0.5vw;
 
+}
+
+.oficina-header-titulo {
+    position: sticky;
+    height: fit-content;
+    margin-top: 2vw;
+    background-image: url(../Imagens/Oficina/madeir.png);
+    background-size: cover;
+    background-repeat: repeat-x;
+    filter: grayscale();
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#caveira-o {
+    width: var(--tamanho-titulo-cidade);
+    height: var(--tamanho-titulo-cidade);
+}
+
+#oficina .tupaciguara-titulo {
+    font-size: var(--tamanho-titulo-cidade);
+}
+
+#rosalia {
+    position: absolute;
+    right: 5.7vw;
+    width: 22.9vw;
+    height: auto;
+    filter: none;
+    transform: translateY(-20%);
+    z-index: 2;
+}
+
+#aspinal {
+    position: absolute;
+    right: 5.7vw;
+    width: 15vw;
+    height: auto;
+    filter: none;
+    transform: translateY(90%);
+    margin: 1.5vw;
+}
+
+#oficina .body {
+    padding-top: 2%;
+    box-sizing: border-box;
+    height: fit-content;
+    background: rgb(237,229,192);
+    background: linear-gradient(45deg, rgba(237,229,192,1) 0%, rgba(227,218,177,1) 100%);
+    display: flex;
+}
+
+#plantas-e-ervas h2 {
+    font-family: FreakShow;
+    font-size: var(--tamanho-nome-musica);
+    color: #1C321A;
+    margin: 0;
+}
+
+#plantas-e-ervas {
+    display: flex;
+    width: 30%;
+    border-style: none solid solid none;
+    font-family: Bronco;
+    font-size: var(--tamanho-nome-autor);
+    padding-left: 2vw;
+    flex-wrap: nowrap;
+    height: fit-content;
+}
+
+#plantas-e-ervas p.titulo {
+    font-weight: 600;
+    margin: 1vw 0 0 0;
+}
+
+#text-plantas {
+    width: 50%;
+    height: fit-content;
+}
+
+#plantas-e-ervas p {
+    margin: 0;
+    color: var(--cinza-oficina);
+}
+
+#plantas-e-ervas img {
+    float:right;
+    width: 15vw;
+    height: 15vw;
+    align-self: end;
+}
+
+#oficina .main-content {
+    display: flex;
+    width: 40vw;
+    justify-content: left;
+    flex-wrap: wrap;
+}
+
+#oficina .main-content > p {
+    font-family: Bronco;
+    margin: 0;
+    margin-left: 7%;
+    display: flex;
+    height: fit-content;
+    width: 40%;
+}
+
+.imagem-oficina {
+    width: 14vw;
+    height: 12vw;
+    margin: 3%;
+}
+
+.flex-break {
+    flex-basis: 100%;
+    height: 0;
+    display: block;
+}
+
+#xarope {
+    transform: translateY(100%);
+}
+
+#unguento {
+    transform: translateY(-60%);
+}
+
+#unguento + p {
+    transform: translate(-20%, -25%)
+}
+
+#clubdemorto {
+    width: 50%;
+    display: grid;
+    color: black;
+    grid-template-columns: 33% 33% max-content;
+    grid-template-rows: max-content max-content 1fr;
+    transform: translate(35%, -50%);
+}
+
+#clubdemorto .nome-musica {
+    color: black;
+    font-family: Bronco;
+    font-weight: 50;
+    margin: 0;
+    margin-top: auto;
+    font-size: calc(var(--tamanho-nome-musica) + 1vw);
+    cursor: default;
+}
+
+#clubdemorto .nome-musica:nth-of-type(1) {
+    grid-column: 2/4;
+}
+
+#clubdemorto .nome-musica:nth-of-type(2) {
+    grid-column: 3;
+    grid-row: 2;
+}
+
+#clubdemorto .nome-artista {
+    font-family: Bronco;
+    grid-column: 3;
+    grid-row: 3;
+}
+
+#clubdemorto > iframe {
+    grid-column: 1;
+    grid-row: 2 / 4;
+    width: 200%;
+    height: 100%;
+}
+
+.nome-artista {
+    color: var(--cinza-oficina);
+    font-family: Bronco;
+    font-size: var(--tamanho-nome-autor);
+    margin: 0;
+    height: fit-content;
+}
+
+#deadmensgun .nome-musica {
+    color: black;
+    font-family: Bronco;
+    font-weight: 50;
+    margin: 0;
+    margin-top: auto;
+    font-size: calc(var(--tamanho-nome-musica) + 1vw);
+    cursor: default;
+}
+
+#deadmensgun iframe {
+    width: 18vw;
+}
+
+#deadmensgun {
+    transform: translateX(50%);
+}
+
+#revolver-oficina {
+    width: 10vw;
+    height:fit-content;
+    transform: rotateZ(90deg) translate(5vw, -4vw);
+    filter: grayscale();
+}
+
+#aquiettime {
+    position: absolute;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: calc(var(--tamanho-nome-musica) + 1vw) auto;
+    left: 5.7vw;
+    transform: translateY(43vw);
+    padding-left: 4vw;
+    width: max-content;
+}
+
+#aquiettime iframe {
+    width: 10vw;
+    height: 10vw;
+}
+
+#aquiettime .nome-musica {
+    color: black;
+    font-family: Bronco;
+    font-weight: 50;
+    margin: 0;
+    height: fit-content;
+    font-size: calc(var(--tamanho-nome-musica) + 1vw);
+    cursor: default;
+    grid-row: 1;
+    grid-column: 2;
+}
+
+#aquiettime .nome-artista {
+    grid-row: 2;
+    grid-column: 2;
 }
