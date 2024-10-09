@@ -701,6 +701,7 @@ nav div p {
     justify-items: center;
     align-items: center;
     padding-bottom: 7vw;
+    margin-bottom: 5vw;
 }
 
 #noticias * {
@@ -754,4 +755,34 @@ nav div p {
 
 #noticias .nome-musica {
     color: black;
+}
+
+#fin {
+    color:black;
+    display: flex;
+    justify-content: center;
+    
+}
+
+#fin h3 {
+    font-family: FreakShow;
+    font-size: var(--tamanho-nome-musica);
+}
+
+#fin p {
+    font-family: Bronco;
+    font-size: var(--tamanho-nome-autor);
+}
+
+#fin * {
+    margin: 0;
+}
+
+#fin div {
+    width: 30%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
