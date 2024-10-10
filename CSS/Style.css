@@ -40,7 +40,7 @@ circle {
     background: radial-gradient(#e66465, #9198e5);
     transform: translate(-10%, -12%);
     stroke-width: 3%;
-    stroke-opacity: 15%;
+    stroke-opacity: 0.15;
     stroke: #0D0601;
     z-index: 12;
 }
