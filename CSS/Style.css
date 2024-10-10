@@ -207,6 +207,30 @@ nav div p {
     text-shadow: 2px 4px 4px black;
 }
 
+#stickers-tela {
+    position: absolute;
+}
+
+#stickers-tela img {
+    width: 10vw;
+    height: auto;
+}
+
+#cartas {
+    transform: translate(580%, 0%);
+}
+
+#dado {
+    transform: translate(800%, 300%);
+}
+
+#chips-pokers {
+    transform: translate(290%, -20%);
+    z-index: 10;
+    position: absolute;
+    pointer-events: none;
+}
+
 .poster {
     width: fit-content;
     display:flex;
@@ -460,6 +484,7 @@ nav div p {
     filter: none;
     transform: translateY(-20%);
     z-index: 2;
+    animation-name: swing-rosalia;
 }
 
 #aspinal {
@@ -672,7 +697,7 @@ nav div p {
 }
 
 #jornal {
-    background-image: url(../Imagens/Jornal/paper-background.jpg);
+    background-image: url(../Imagens/Jornal/paper-background.png);
     justify-content: center;
     display: flex;
     flex-wrap: wrap;
@@ -705,7 +730,7 @@ nav div p {
 }
 
 #noticias * {
-    opacity: 0.85;
+    opacity: 0.90;
 }
 
 .container {
@@ -761,6 +786,8 @@ nav div p {
     color:black;
     display: flex;
     justify-content: center;
+    gap:10vw;
+    padding-bottom: 5vw;
     
 }
 
@@ -776,6 +803,7 @@ nav div p {
 
 #fin * {
     margin: 0;
+    opacity: 0.9;
 }
 
 #fin div {
@@ -785,4 +813,92 @@ nav div p {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    box-sizing: border-box;
+}
+
+.imagem-velha {
+    width: 100%;
+    height: auto;
+}
+
+#fim {
+    width: 100vw;
+    transform: translateX(-5.7vw);
+    font-weight: 1;
+    height: 5vh;
+    background-color: var(--cor-subtitulos);
+    color: var(--cor-texto-destaque);
+    font-family: FreakShow;
+    text-align: center;
+    word-spacing: 0.5rem;
+}
+
+
+
+/* Ajustes finais */
+
+.musicas div:hover h3 {
+    color: var(--cor-texto-destaque)
+}
+
+#oficina .body * {
+    opacity: 0.9;   
+}
+
+#oficina .body iframe {
+    opacity: 1;   
+}
+
+#fin img {
+    filter: grayscale();
+}
+
+.poster {
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    transition: all 1ms;
+    transform-origin: top;
+    animation-timing-function: ease-in-out;
+    animation-name: swing;
+}
+
+@keyframes swing {
+    0% {
+        transform: skew(0deg, 0deg);
+    }
+    25% {
+        transform: skew(1deg, 1deg);
+    }
+    50% {
+        transform: skew(0deg, 0deg);
+    }
+    75% {
+        transform: skew(-1deg, -1deg);
+    }
+    100% {
+        transform: skew(0deg, 0deg);
+    }
+}
+
+@keyframes swing-rosalia {
+    0% {
+        transform: skew(0deg, 0deg) translateY(-20%);
+    }
+    25% {
+        transform: skew(1deg, 1deg) translateY(-20%);
+    }
+    50% {
+        transform: skew(0deg, 0deg) translateY(-20%);
+    }
+    75% {
+        transform: skew(-1deg, -1deg) translateY(-20%);
+    }
+    100% {
+        transform: skew(0deg, 0deg) translateY(-20%);
+    }
+}
+
+
+#oficina img, #jornal img {
+    pointer-events: none;
 }
